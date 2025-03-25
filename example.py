@@ -1,9 +1,9 @@
 
-from base32.decode import decode
-from base32.encode import encode
+from base32_tiny.decode import decode
+from base32_tiny.encode import encode
 
 
-content = "hello, there!"
+content = "hello, there!"  # content = b"hello, there!"
 
 result_rfc3548 = encode(content, variant="RFC3548")
 print(result_rfc3548)  # output: NBSWY3DPFQQHI2DFOJSSC===

@@ -34,7 +34,7 @@ def encode(data: Union[str, bytes], *, variant: Variant, options: Optional[Optio
         alphabet = CROCKFORD
         default_padding = False
     else:
-        raise ValueError('Unknown base32 variant: ' + variant)
+        raise ValueError('Unknown base32_tiny variant: ' + variant)
 
     padding = options.get('padding', default_padding)
     view = to_data_view(data)
