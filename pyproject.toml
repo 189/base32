@@ -1,6 +1,6 @@
 [project]
 name = "base32_tiny"
-version = "0.1.1"
+version = "0.1.2"
 description = "Base32 encoding/decoding,  RFC4648, RFC4648_HEX, Crockford"
 authors = [
     {name = "wangshangwen",email = "shangwenwang20@gmail.com"}

@@ -1,6 +1,5 @@
 
-from base32_tiny.decode import decode
-from base32_tiny.encode import encode
+from base32_tiny import decode, encode
 
 
 content = "hello, there!"  # content = b"hello, there!"

@@ -20,9 +20,7 @@ $ poetry add base32_tiny
 ## Usage
 
 ```
-from base32_tiny.decode import decode
-from base32_tiny.encode import encode
-
+from base32_tiny import decode, encode
 
 content = "hello, there!" 
 #content_bytes = b"hello, there!"
