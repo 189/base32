@@ -1,31 +1,9 @@
-# base32
 
-Base32 encoding/decoding, RFC3548, RFC4648, RFC4648_HEX, Crockford
-
-
-## Installation
-
-using pip
-
-```
-$ pip install base32-tiny
-```
-
-using poetry
-
-```
-$ poetry add base32-tiny
-```
-
-## Usage
-
-```
 from base32.decode import decode
 from base32.encode import encode
 
 
-content = "hello, there!" 
-#content_bytes = b"hello, there!"
+content = "hello, there!"
 
 result_rfc3548 = encode(content, variant="RFC3548")
 print(result_rfc3548)  # output: NBSWY3DPFQQHI2DFOJSSC===
@@ -44,8 +22,4 @@ print(decode(result_rfc4648_HEX, variant="RFC4648-HEX"))  # output: b'hello, the
 result_crockford = encode(content, variant="Crockford")
 print(result_crockford)  # output: D1JPRV3F5GG78T35E9JJ2
 print(decode(result_crockford, variant="Crockford"))  # output: b'hello, there!'
-```
 
-### API Reference
-#### def encode(data: Union[str, bytes], *, variant: Variant, options: Optional[Options] = None) -> str
-#### def decode(input_str: str, variant: Variant) -> bytes
