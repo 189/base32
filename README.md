@@ -1,7 +1,6 @@
 # base32_tiny
 
-Base32 encoding/decoding, RFC3548, RFC4648, RFC4648_HEX, Crockford
-
+A pure python lib for base32 encoding/decoding, RFC3548, RFC4648, RFC4648_HEX, Crockford
 
 ## Installation
 
@@ -22,7 +21,7 @@ $ poetry add base32_tiny
 ```
 from base32_tiny import decode, encode
 
-content = "hello, there!" 
+content = "hello, there!"
 #content_bytes = b"hello, there!"
 
 result_rfc3548 = encode(content, variant="RFC3548")
@@ -45,7 +44,9 @@ print(decode(result_crockford, variant="Crockford"))  # output: b'hello, there!'
 ```
 
 ### API Reference
-#### def encode(data: Union[str, bytes], *, variant: Variant, options: Optional[Options] = None) -> str
+
+#### def encode(data: Union[str, bytes], \*, variant: Variant, options: Optional[Options] = None) -> str
+
 #### def decode(input_str: str, variant: Variant) -> bytes
 
 ```python
